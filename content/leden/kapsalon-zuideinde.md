@@ -6,6 +6,6 @@ postcode: 7875 CD Exloo
 email: zuideinde@home.nl
 phone: 
 website: 
-draft: ,true
+draft: true
 ---
 

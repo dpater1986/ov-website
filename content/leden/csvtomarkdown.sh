@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while IFS="," read -r title name adress postcode email phone draft
+while IFS="," read -r title name adress postcode email website phone draft
 do
 	documentname=$(echo $title | tr ' ' '-')
 	cat > "${documentname,,}.md" <<EOF

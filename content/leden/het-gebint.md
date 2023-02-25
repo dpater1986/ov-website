@@ -6,6 +6,6 @@ postcode: 7875 CD Exloo
 email: info@hetgebint.eu
 phone: 
 website: 
-draft: ,true
+draft: true
 ---
 

@@ -6,6 +6,6 @@ postcode: 7875AJ Exloo
 email: info@depapiermaecker.nl
 phone: 
 website: 
-draft: ,true
+draft: true
 ---
 

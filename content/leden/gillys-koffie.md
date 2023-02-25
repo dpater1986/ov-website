@@ -6,6 +6,6 @@ postcode: 7875BM Exloo
 email: 
 phone: 
 website: 
-draft: ,true
+draft: true
 ---
 

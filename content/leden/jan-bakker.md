@@ -6,6 +6,6 @@ postcode: 7875AR Exloo
 email: 
 phone: 
 website: 
-draft: ,true
+draft: true
 ---
 

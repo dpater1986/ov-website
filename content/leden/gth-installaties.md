@@ -6,6 +6,6 @@ postcode: 7875AK Exloo
 email: gthexloo@hotmail.com
 phone: 
 website: 
-draft: ,true
+draft: true
 ---
 

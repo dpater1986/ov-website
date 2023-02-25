@@ -6,6 +6,6 @@ postcode: 7875CK Exloo
 email: landwinkel.exloo@gmail.com
 phone: 
 website: 
-draft: ,true
+draft: true
 ---
 

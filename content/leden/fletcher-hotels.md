@@ -6,6 +6,6 @@ postcode: 7875 TB Exloo
 email: 
 phone: 
 website: 
-draft: ,true
+draft: true
 ---
 
