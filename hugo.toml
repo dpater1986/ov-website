@@ -2,6 +2,7 @@ baseURL = 'https://ondernemers-exloo.nl/'
 languageCode = 'nl-nl'
 title = 'Ondernemersvereniging Exloo'
 theme = 'simply-ov'
+pluralizeListTitles = false
 
 [params.logo]
 	logo = 'image/logo.svg'

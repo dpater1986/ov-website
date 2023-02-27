@@ -1,7 +1,7 @@
 ---
 title: 'Nieuwsbrief - juli 2021'
 date: 2021-07-01T00:00:00+00:00
-download-link: 'nieuwsbrieven/documenten/2021/202107-nieuwsbrief-04.pdf'
+downloadlink: 'documenten/2021/202107-nieuwsbrief-04.pdf'
 ---
 
 ## Inhoudsopgeva
