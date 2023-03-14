@@ -1,0 +1,22 @@
+baseURL = 'https://ondernemers-exloo.nl/'
+languageCode = 'nl-nl'
+title = 'Ondernemersvereniging Exloo'
+theme = 'simply-ov'
+
+[params.logo]
+	logo = 'image/logo.svg'
+	alt = 'Logo ondernemers vereniging Exloo'
+
+[params.homepage_meta_tags]
+	meta_description = 'Exloërs ondernemers vereniging. Voor en door ondernemers'
+
+
+[permalinks]
+	post = "/:year/:month/:day/:slug/"
+	pages = "/:filename/"
+
+
+[sitemap]
+	changefreq = 'monthly'
+	filename = 'sitemap.xml'
+	priority = 0.5

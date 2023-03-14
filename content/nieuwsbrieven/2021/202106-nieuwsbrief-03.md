@@ -1,7 +1,7 @@
 ---
 title: 'Nieuwsbrief - juni 2021'
 date: 2021-06-01T00:00:00+00:00
-downloadlink: 'documenten/2021/202106-nieuwsbrief-03.pdf'
+download-link: 'nieuwsbrieven/documenten/2021/202106-nieuwsbrief-03.pdf'
 ---
 
 ## Inhoudsopgeva

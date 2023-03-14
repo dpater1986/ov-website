@@ -1,46 +1,4 @@
 <header>  
-    <a class="logo"href="/">
-        <picture>
-            <source media="(min-width:1024px)" srcset="{{ $image := resources.Get "images/logo.svg" }} {{ $image.RelPermalink }}">
-            <source media="(min-width:768px)" srcset="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}">
-            <img src="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}" alt="Ondernemers vereninging Exloo Logo">
-        </picture>
-    </a>
-    <nav class="navbar" role="navigation">  
-        <div class="navbar__left">  
-            <a href="/"><strong>{{ .Site.Title }}</strong></a>  
-        </div>  
-        <aside>
-            <ul>
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                {{ if .HasChildren }}
-                <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                    <a href="#">
-                        {{ .Pre }}
-                        <span>{{ .Name }}</span>
-                    </a>
-                </li>
-                <ul class="sub-menu">
-                    {{ range .Children }}
-                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                        <a href="{{ .URL }}">{{ .Name }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-                {{ else }}
-                <li>
-                    <a href="{{ .URL }}">
-                        {{ .Pre }}
-                        <span>{{ .Name }}</span>
-                    </a>
-                </li>
-                {{ end }}
-                {{ end }}
-            </ul>
-        </aside>
-        </div>  
-    </nav>  
     <div class="navbar__left">
         <a class="logo" href="/">
             <picture>
