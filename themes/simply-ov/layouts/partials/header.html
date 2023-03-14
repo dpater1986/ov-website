@@ -1,7 +1,10 @@
 <header>  
     <a class="logo"href="/">
-        <img class="full-logo" src="/images/logo.svg" alt="Logo ondernemers vereniging Exloo">
-        <img class="icon" src="/images/icon.svg" alt="Icon ondernemers vereniging Exloo">
+        <picture>
+            <source media="(min-width:1024px)" srcset="{{ $image := resources.Get "images/logo.svg" }} {{ $image.RelPermalink }}">
+            <source media="(min-width:768px)" srcset="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}">
+            <img src="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}" alt="Ondernemers vereninging Exloo Logo">
+        </picture>
     </a>
     <nav class="navbar" role="navigation">  
         <div class="navbar__left">  
