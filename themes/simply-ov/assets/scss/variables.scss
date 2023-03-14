@@ -1,15 +1,17 @@
 // Color scheme
 $primary: rgba(18, 40, 36, 1);
 $complementary: rgba(40, 22, 18, 1);
-$reseda-green: rgba(112, 139, 117, 1);
-$olivine: rgba(154, 184, 122, 1);
-$mindaro: rgba(248, 249, 145, 1);
+$color-li: rgba(243, 249, 210, 1);
+$color-lg: rgba(203, 234, 166, 1);
+$color-pi: rgba(192, 214, 132, 1);
 
 // Breakpoints
-$sm: 0px;
-$md: 768px;
-$lg: 1024px; 
-$xl: 1200px;
+$sm-min: 480px;
+$md-min: 768px;
+$lg-min: 1024px; 
+$xl-min: 1260px;
+
+$content: 720px;
 
 // Fonts
 @font-face {

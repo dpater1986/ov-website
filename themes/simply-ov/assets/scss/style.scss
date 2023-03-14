@@ -1,8 +1,117 @@
 @import 'variables';
+@import 'clean';
 
-
-p {
-	font-family: 'Brevia';
-	font-weight: bold;
-	font-style: italic;
+header {
+	background: $color-li;
+	box-shadow: 0.1rem 0.1rem 0.3rem 0rem $primary;
+	position: sticky;
+	top: 0;
 }
+
+.logo {
+	display: inline-block;
+	margin: 0.5rem 0 0 0.5rem;
+	width: 4rem;
+}
+
+nav {
+	height: 100%;
+	width: 100%;
+	//max-height: 0;
+	transition: max-height .5s easy-out;
+	overflow: hidden;
+	.menu a {
+		display: block;
+		padding: 1rem;
+		collor: $primary;
+		&:hover {
+			background-color: $color-lg;
+		}
+	}
+}
+
+.hamb__menu {
+	cursor: pointer;
+	float: right;
+	padding: 40px 20px;
+}
+
+.hamb__line {
+	background: $primary;
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 24px;
+	&:before,
+	&:after {
+		background: $primary;
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		transition: all .2s ease-out;
+		width: 100%;
+	}
+	&:before {
+		top: 5px;
+	}
+	&:after {
+		top: -5px;
+	}
+}
+
+.hamb__input {
+	display: none;
+	&:checked {
+		~ nav {
+			max-height: 100%;
+		}
+		~ .hamb__line {
+			background: transparant;
+			&:before {
+				transform: rotate(-45deg);
+				top:0;
+			}&:after {
+				transform: rotate(45deg);
+				top:0;
+			}
+		
+		}
+	}
+}
+
+/*
+header {
+nav {
+display: flex;
+flex-wrap: wrap;
+height: 10rem;
+&>* {
+flex: 1 1 auto;
+}
+.navbar__left {
+}
+.navbar__center {
+display:none
+}
+.navbar__right {
+display: flex;
+flex-wrap: wrap;
+gap: 2rem; 
+align-items: center;
+justify-content: right;
+margin-right: 2rem;
+}
+
+}
+img {
+max-height: 2rem;
+@include md {
+max-height: 4rem;
+}
+@include lg {
+max-height: 8rem;
+}
+}
+}
+ */

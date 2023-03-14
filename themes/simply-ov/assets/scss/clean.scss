@@ -1,0 +1,62 @@
+// reset html
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Brevia, serif, sans-serif, Arial;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+a {
+	color: $primary;
+	text-decoration: none;
+}
+
+.hideit {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $primary;
+}
+
+ul {
+	list-style: none;
+}
+// Media quary
+
+@mixin sm {
+    @media (min-width: #{$sm-min}) {
+        @content;
+    }
+}
+@mixin md {
+    // Medium devices
+    @media (min-width: #{$md-min}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    // Large devices
+    @media (min-width: #{$lg-min}) {
+        @content;
+    }
+}
+@mixin xl {
+    // Extra large devices
+    @media (min-width: #{$xl-min}) {
+        @content;
+    }
+}
+

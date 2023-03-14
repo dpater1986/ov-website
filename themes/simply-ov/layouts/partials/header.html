@@ -41,4 +41,20 @@
         </aside>
         </div>  
     </nav>  
+    <div class="navbar__left">
+        <a class="logo" href="/">
+            <picture>
+                <source media="(min-width:1024px)" srcset="{{ $image := resources.Get "images/logo.svg" }} {{ $image.RelPermalink }}">
+                <source media="(min-width:768px)" srcset="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}">
+                <img src="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}" alt="Ondernemers vereninging Exloo">
+            </picture>
+        </a>
+        <input class="navbar__right hamb__input" type="checkbox" id="hamb_input" />
+        <label class="navbar__right hamb__menu" for="hamb_input"><span class="hamb__line"></span></label>
+        <nav class="navbar" role="navigation">  
+            <ul class="menu">  
+                <li><a href="/nieuwsbrieven">Nieuws</a></li>  
+                <li><a href="/leden">Ledenlijst</a></li>
+            </ul>  
+        </nav>  
 </header>  
