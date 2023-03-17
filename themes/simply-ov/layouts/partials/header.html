@@ -6,16 +6,38 @@
             <img src="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}" alt="Ondernemers vereninging Exloo">
         </picture>
     </a>
-    <div class="navbar self__right">
+
     <nav role="navigation">  
-        <ul class="menu">  
-            <li><a href="/nieuwsbrieven">Nieuws</a></li>  
-            <li><a href="/leden">Ledenlijst</a></li>
-        </ul>  
-    </nav>  
-    <input class="menu__input" type="checkbox" id="menu__input" />
-    <label class="menu__line" for="menu__input"><span class="menu__line">
-        <div class="menu__button"></div>
+    <input class="menu__toggle" type="checkbox" id="menu__toggle" />
+    <label class="menu__button_container" for="menu__toggle">
+            <span class="menu__button"></span>
     </label>
-    </div>
+        <ul class="menu">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                <a href="#">
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+            <ul class="sub-menu">
+                {{ range .Children }}
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ else }}
+            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                <a href="{{ .URL }}">
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </nav>
 </header>  

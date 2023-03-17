@@ -14,7 +14,7 @@ html {
 
 html,
 a {
-	color: $primary;
+	color: $color__primary;
 	text-decoration: none;
 }
 
@@ -27,7 +27,7 @@ h2,
 h3,
 h4,
 h5 {
-    color: $primary;
+    color: $color__primary;
 }
 
 ul {
@@ -36,26 +36,26 @@ ul {
 // Media quary
 
 @mixin sm {
-    @media (min-width: #{$sm-min}) {
+    @media (min-width: #{$min__sm}) {
         @content;
     }
 }
 @mixin md {
     // Medium devices
-    @media (min-width: #{$md-min}) {
+    @media (min-width: #{$min__md}) {
         @content;
     }
 }
 
 @mixin lg {
     // Large devices
-    @media (min-width: #{$lg-min}) {
+    @media (min-width: #{$min__lg}) {
         @content;
     }
 }
 @mixin xl {
     // Extra large devices
-    @media (min-width: #{$xl-min}) {
+    @media (min-width: #{$min__xl}) {
         @content;
     }
 }

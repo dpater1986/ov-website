@@ -1,94 +1,126 @@
 @import 'variables';
 @import 'clean';
 
-
+/* Header */
 header {
-	background: $color-li;
-	border-bottom: 2px solid $primary-opacity5;
-	position: sticky;
-	top: 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	height: 50px;
+	background-color: $color__bg;
+	height: 3rem;
+	padding: 1rem;
 }
 
-.menu__line {
-	height: 100%;
-	width: 30px;
-	cursor: pointer;
+.logo {
+	width: 3rem;
+}
+
+.menu__toggle { 
+	display: none; 
+}
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 3rem;
+	background: $color__bg;	
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+
+	> li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0.5rem 0;
+		width: 100%;
+		overflow: hidden;
+	}
+}
+.menu__toggle { 
+	~ .menu li {
+		height: 0;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+	&:checked {
+		~ .menu {
+			li {
+				border: 1px solid $color__primary;
+				height: 2.5rem;
+				padding: 0.5rem;
+				transition: height 400ms cubic-brezier(0.23, 1 0.32, 1);
+				&:not(:last-child) {
+					border-bottom: none;
+				}
+			}
+		}
+		+ .menu__button_container .menu__button::before {
+			margin-top: 0px;
+			transform: rotate(45deg);
+		}
+		+ .menu__button_container .menu__button {
+			background: rgba(255, 255, 255, 0);
+		}
+		+ .menu__button_container .menu__button::after {
+			margin-top: 0px;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.menu__button_container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
 }
-
-.menu__input {
-	display: none;
-}
-
+ 
 .menu__button,
 .menu__button::before,
 .menu__button::after {
 	display: block;
-	background-color: $primary;
+	background-color: $color__primary;
 	position: absolute;
-	height: 4px;
 	width: 30px;
+	height: 4px;
 	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 	border-radius: 2px;
 }
 
-.menu__button::before {
-	content: '';
-	margin-top: -8px;
-}
-
-.menu__button::after {
-	content: '';
-	margin-top: 8px;
-}
-
-.menu__input:checked {
-	&+ .menu__line .menu__button::before {
-		margin-top: 0px;
-		transform: rotate(405deg);
+.menu__button {
+	&::before {
+		content: "";
+		margin-top: -8px;
 	}
-	&+ .menu__line .menu__button {
-		background: rgba(255, 255, 255, 0);
-	}
-	&+ .menu__line .menu__button::after {
-		margin-top: 0px;
-		transform: rotate(-405deg);
-	}
-	&~ .menu ul li {
-		border: 1px solid #333;
-		height: 2.5em;
-		padding: 0.5em;
-		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	&::after {
+		content: "";
+		margin-top: 8px;
 	}
 }
 
-nav .menu {
-	position: absolute;
-	top: 0;
-	margin-top: 50px;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%
-	ul li {
-		height: 0;
-		margin: 0;
-		padding: 0;
-		border: 0;
-		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+@include sm {
+	.menu__button_container {
+		display: none;
 	}
-
+	.menu {
+		position: inherit;
+		flex-direction: row;
+		margin-top: 0;
+		li {
+			border: none;
+		}
+	}
 }
+
 /*
 nav {
 height: 100%;

@@ -1,16 +1,16 @@
 // Color scheme
-$primary: rgba(18, 40, 36, 1);
-$primary-opacity5: rgba(18, 40, 36, 0.5);
-$complementary: rgba(40, 22, 18, 1);
-$color-li: rgba(243, 249, 210, 1);
-$color-lg: rgba(203, 234, 166, 1);
-$color-pi: rgba(192, 214, 132, 1);
+$color__primary: rgba(18, 40, 36, 1);
+$color__primary5: rgba(18, 40, 36, 0.5);
+$color__complementary: rgba(40, 22, 18, 1);
+$color__bg: rgba(243, 249, 210, 1);
+$color__lg: rgba(203, 234, 166, 1);
+$color__pi: rgba(192, 214, 132, 1);
 
 // Breakpoints
-$sm-min: 480px;
-$md-min: 768px;
-$lg-min: 1024px; 
-$xl-min: 1260px;
+$min__sm: 480px;
+$min__md: 768px;
+$min__lg: 1024px; 
+$min__xl: 1260px;
 
 $content: 720px;
 
