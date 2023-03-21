@@ -36,26 +36,26 @@ ul {
 // Media quary
 
 @mixin sm {
-    @media (min-width: #{$min__sm}) {
+    @media (max-width: #{$min__sm}) {
         @content;
     }
 }
 @mixin md {
     // Medium devices
-    @media (min-width: #{$min__md}) {
+    @media (max-width: #{$min__md}) {
         @content;
     }
 }
 
 @mixin lg {
     // Large devices
-    @media (min-width: #{$min__lg}) {
+    @media (max-width: #{$min__lg}) {
         @content;
     }
 }
 @mixin xl {
     // Extra large devices
-    @media (min-width: #{$min__xl}) {
+    @media (max-width: #{$min__xl}) {
         @content;
     }
 }

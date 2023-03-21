@@ -16,210 +16,143 @@ header {
 	width: 3rem;
 }
 
+
 .menu__toggle { 
 	display: none; 
 }
-.menu {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 3rem;
-	background: $color__bg;	
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
 
-	> li {
-		display: flex;
-		justify-content: center;
-		margin: 0;
-		padding: 0.5rem 0;
+.menu {
+	display: flex;
+	flex-direction: row;
+
+	li {
+		padding: 0.4rem 0 0.4rem 1rem;
+		border: 2px solid transparant
+	}	
+	li::after{
+		transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		background: $color__primary;
+		content: "";
+		display: block;
+		border-radius: 2px;
+		height: 3px;
+		width: 0;
+		margin-top: 2px
+	}	
+	li:hover:after,
+	li:focus:after,
+	li:active:after,
+	li:focus-visible:after,
+	li:focus-within:after,
+	li:target:after{
 		width: 100%;
-		overflow: hidden;
 	}
+
+}
+
+
+/*
+.menu {
+position: absolute;
+top: 0;
+left: 0;
+margin-top: 3rem;
+background: $color__bg;	
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+
+> li {
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 0.5rem 0;
+width: 100%;
+overflow: hidden;
+}
 }
 .menu__toggle { 
-	~ .menu li {
-		height: 0;
-		border: 0;
-		margin: 0;
-		padding: 0;
-		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-	}
-	&:checked {
-		~ .menu {
-			li {
-				border: 1px solid $color__primary;
-				height: 2.5rem;
-				padding: 0.5rem;
-				transition: height 400ms cubic-brezier(0.23, 1 0.32, 1);
-				&:not(:last-child) {
-					border-bottom: none;
-				}
-			}
-		}
-		+ .menu__button_container .menu__button::before {
-			margin-top: 0px;
-			transform: rotate(45deg);
-		}
-		+ .menu__button_container .menu__button {
-			background: rgba(255, 255, 255, 0);
-		}
-		+ .menu__button_container .menu__button::after {
-			margin-top: 0px;
-			transform: rotate(-45deg);
-		}
-	}
+~ .menu li {
+height: 0;
+border: 0;
+margin: 0;
+padding: 0;
+transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+&:checked {
+~ .menu {
+li {
+border: 1px solid $color__primary;
+height: 2.5rem;
+padding: 0.5rem;
+transition: height 400ms cubic-brezier(0.23, 1 0.32, 1);
+&:not(:last-child) {
+border-bottom: none;
+}
+}
+}
++ .menu__button_container .menu__button::before {
+margin-top: 0px;
+transform: rotate(45deg);
+}
++ .menu__button_container .menu__button {
+background: rgba(255, 255, 255, 0);
+}
++ .menu__button_container .menu__button::after {
+margin-top: 0px;
+transform: rotate(-45deg);
+}
+}
 }
 
 .menu__button_container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 30px;
-	width: 30px;
-	cursor: pointer;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 30px;
+width: 30px;
+cursor: pointer;
 }
- 
+
 .menu__button,
 .menu__button::before,
-.menu__button::after {
-	display: block;
-	background-color: $color__primary;
-	position: absolute;
-	width: 30px;
-	height: 4px;
-	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-	border-radius: 2px;
+.menu__button::after {{
+display: block;
+background-color: $color__primary;
+position: absolute;
+width: 30px;
+height: 4px;
+transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+border-radius: 2px;
 }
 
 .menu__button {
-	&::before {
-		content: "";
-		margin-top: -8px;
-	}
-	&::after {
-		content: "";
-		margin-top: 8px;
-	}
+&::before {
+content: "";
+margin-top: -8px;
+}
+&::after {
+content: "";
+margin-top: 8px;
+}
 }
 
 @include sm {
-	.menu__button_container {
-		display: none;
-	}
-	.menu {
-		position: inherit;
-		flex-direction: row;
-		margin-top: 0;
-		li {
-			border: none;
-		}
-	}
-}
-
-/*
-nav {
-height: 100%;
-width: 100%;
-max-height: 0;
-transition: max-height .5s easy-out;
-overflow: hidden;
-.menu a {
-display: block;
-padding: 1rem;
-collor: $primary;
-&:hover {
-background-color: $color-lg;
-}
-}
-}
-
-.hamb__menu {
-cursor: pointer;
-float: right;
-padding: 40px 20px;
-}
-
-.hamb__line {
-background: $primary;
-display: block;
-height: 2px;
-position: relative;
-width: 24px;
-&:before,
-&:after {
-background: $primary;
-content: '';
-display: block;
-height: 100%;
-position: absolute;
-transition: all .2s ease-out;
-width: 100%;
-}
-&:before {
-top: 5px;
-}
-&:after {
-top: -5px;
-}
-}
-
-.hamb__input {
+.menu__button_container {
 display: none;
-&:checked {
-~ nav {
-max-height: 100%;
 }
-~ .hamb__menu .hamb__line {
-background: white;
-&:before {
-transform: rotate(-45deg);
-top:0;
-}&:after {
-transform: rotate(45deg);
-top:0;
-}
+.menu_toggle ~ .menu {
+position: inherit;
+flex-direction: row;
+margin-top: 0;
+li {
+border: none;
+height: auto;
 
 }
 }
 }
-
-/*
-header {
-nav {
-display: flex;
-flex-wrap: wrap;
-height: 10rem;
-&>* {
-flex: 1 1 auto;
-}
-.navbar__left {
-}
-.navbar__center {
-display:none
-}
-.navbar__right {
-display: flex;
-flex-wrap: wrap;
-gap: 2rem; 
-align-items: center;
-justify-content: right;
-margin-right: 2rem;
-}
-
-}
-img {
-max-height: 2rem;
-@include md {
-max-height: 4rem;
-}
-@include lg {
-max-height: 8rem;
-}
-}
-}
- */
+*/
