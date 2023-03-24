@@ -6,3 +6,5 @@ menu:
 
 ---
 test
+
+{{< listfiles path="nieuwsbrieven/documenten" type="pdf" >}}

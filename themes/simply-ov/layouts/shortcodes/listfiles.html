@@ -1,0 +1,32 @@
+{{ $path	:= .Get "path" }}
+{{ $type	:= .Get "type" }}
+{{ $searchpath	:= printf "content/%s" $path }}
+{{ $subpath	:= readDir $searchpath }}
+{{ $subpath	:= sort $subpath ".Name" "desc" }}
+{{ range $subpath }}
+	{{ if .IsDir }}
+		{{ $subname	:= .Name }}
+		{{ $filepath	:= printf "%s/%s" $searchpath $subname }}
+		{{ $files	:= readDir $filepath }}
+		{{ $files	:= sort $files ".Name" "desc" }}
+		{{ $ext		:= default "-" ($type)}}
+		{{ if (fileExists $filepath)}}
+			<h2>{{ .Name }}</h2>
+			<ul class="files">
+				{{- range $files }}
+					{{ if (and (ne (substr .Name 0 1) "_") (not .IsDir)) }}{{ $f := printf "%s/%s" $path .Name }}
+						{{ $e := findRE "\\w+$" .Name }}
+						{{ if (or ( eq $ext "-") (in $e $ext) )}}
+							{{ $titlename := replace .Name "-" " " }}
+							{{ $titlename := replace $titlename "." "" }}
+							{{ $titlename := replace $titlename $ext "" }}
+							<li>
+								<a class="" href=/{{$f }} type=text/plain download>{{ $titlename }}</a>
+							</li>
+						{{end}}
+					{{end}}
+				{{- end }}
+			</ul>
+		{{ end }}
+	{{ end }}
+{{ end }}
