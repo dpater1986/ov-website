@@ -1,7 +1,8 @@
 ---
 title: Ledenlijst
 menu:
-    - main
+    main:
+      weight: 80
 ---
 
 Dit is de huidige ledenlijst:

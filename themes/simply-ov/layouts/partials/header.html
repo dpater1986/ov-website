@@ -15,28 +15,12 @@
         <ul class="menu">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
-            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                <a href="#">
-                    {{ .Pre }}
-                    <span>{{ .Name }}</span>
-                </a>
-            </li>
-            <ul class="sub-menu">
-                {{ range .Children }}
-                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                </li>
-                {{ end }}
-            </ul>
-            {{ else }}
-            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}{{ if eq .Name "Contact" }} accent {{ end }} ">
                 <a href="{{ .URL }}">
                     {{ .Pre }}
                     <span>{{ .Name }}</span>
                 </a>
             </li>
-            {{ end }}
             {{ end }}
         </ul>
     </nav>

@@ -1,6 +1,8 @@
 ---
 title: 'Nieuwsbrieven'
 menu:
-    - main
+    main:
+      weight: 10
+
 ---
 test
