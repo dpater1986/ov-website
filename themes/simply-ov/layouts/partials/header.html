@@ -1,9 +1,9 @@
 <header>  
     <a class="logo navbar" href="/">
         <picture>
-            <source media="(min-width:1024px)" srcset="{{ $image := resources.Get "images/logo.svg" }} {{ $image.RelPermalink }}">
-            <source media="(min-width:768px)" srcset="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}">
-            <img src="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}" alt="Ondernemers vereninging Exloo">
+            <source media="(min-width:768px)" srcset="{{ $image := resources.Get "images/logo.svg" }} {{ $image.RelPermalink }}">
+            <source srcset="{{ $image := resources.Get "images/icon.svg" }} {{ $image.RelPermalink }}">
+            <img src="{{ $image := resources.Get "images/logo.svg" }} {{ $image.RelPermalink }}" alt="Ondernemers vereninging Exloo">
         </picture>
     </a>
 
@@ -15,7 +15,7 @@
         <ul class="menu">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}{{ if eq .Name "Contact" }} accent {{ end }} ">
+            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}{{ if eq .Name "Contact" }} accent{{ end }}">
                 <a href="{{ .URL }}">
                     {{ .Pre }}
                     <span>{{ .Name }}</span>

@@ -3,6 +3,7 @@
 {{ $searchpath	:= printf "content/%s" $path }}
 {{ $subpath	:= readDir $searchpath }}
 {{ $subpath	:= sort $subpath ".Name" "desc" }}
+<section class="file__list">
 {{ range $subpath }}
 	{{ if .IsDir }}
 		{{ $subname	:= .Name }}
@@ -11,7 +12,8 @@
 		{{ $files	:= sort $files ".Name" "desc" }}
 		{{ $ext		:= default "-" ($type)}}
 		{{ if (fileExists $filepath)}}
-			<h2>{{ .Name }}</h2>
+		<section class="file__list_sub">
+			<h3>{{ .Name }}</h3>
 			<ul class="files">
 				{{- range $files }}
 					{{ if (and (ne (substr .Name 0 1) "_") (not .IsDir)) }}{{ $f := printf "%s/%s" $path .Name }}
@@ -20,6 +22,7 @@
 							{{ $titlename := replace .Name "-" " " }}
 							{{ $titlename := replace $titlename "." "" }}
 							{{ $titlename := replace $titlename $ext "" }}
+							{{ $titlename := slicestr $titlename 7 | humanize }}
 							<li>
 								<a class="" href=/{{$f }} type=text/plain download>{{ $titlename }}</a>
 							</li>
@@ -27,6 +30,8 @@
 					{{end}}
 				{{- end }}
 			</ul>
+		</section>
 		{{ end }}
 	{{ end }}
 {{ end }}
+</section>
