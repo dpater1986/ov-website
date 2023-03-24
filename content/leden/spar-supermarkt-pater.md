@@ -9,6 +9,6 @@ email: info@sparpater.nl
 phone: 
 website: https://sparpater.nl/
 stageplek: false
-draft: true
+draft: false
 ---
 
