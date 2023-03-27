@@ -5,10 +5,8 @@ logo: "images/leden/logo_voetpraktijk-exloo.jpg"
 icon: "images/leden/icon_voetpraktijk-exloo.jpg"
 address: Valtherweg 17
 postcode: 7875TA Exloo
-email: info@voetpraktijk-exloo.nl
-phone: 0591852430
-website: https://voetpraktijk-exloo.nl/
-stageplek: false
-draft: true
+website: 
+stageplek: 
+draft: false
 ---
 

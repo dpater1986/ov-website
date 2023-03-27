@@ -5,10 +5,8 @@ logo: "images/leden/logo_verzord-wonen.jpg"
 icon: "images/leden/icon_verzord-wonen.jpg"
 address: Zuiderhoofdstraat 20
 postcode: 7875BX Exloo
-email: info@verzorgdwoneninexloo.nl
-phone: 0591729350
-website: https://verzorgdwoneninexloo.nl/
-stageplek: false
-draft: true
+website: 
+stageplek: 
+draft: false
 ---
 

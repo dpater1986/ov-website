@@ -5,10 +5,8 @@ logo: "images/leden/logo_landwinkel-exloo.jpg"
 icon: "images/leden/icon_landwinkel-exloo.jpg"
 address: Oude drijk 2
 postcode: 7875CK Exloo
-email: landwinkel.exloo@gmail.com
-phone: 
 website: 
-stageplek: false
-draft: true
+stageplek: 
+draft: false
 ---
 

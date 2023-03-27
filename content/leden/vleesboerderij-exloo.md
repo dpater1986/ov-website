@@ -5,10 +5,8 @@ logo: "images/leden/logo_vleesboerderij-exloo.jpg"
 icon: "images/leden/icon_vleesboerderij-exloo.jpg"
 address: Polweg 8
 postcode: 7875 CG Exloo
-email: 
-phone: 
 website: 
-stageplek: false
-draft: true
+stageplek: 
+draft: false
 ---
 

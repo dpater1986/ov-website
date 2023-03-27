@@ -5,10 +5,8 @@ logo: "images/leden/logo_gth-installaties.jpg"
 icon: "images/leden/icon_gth-installaties.jpg"
 address: Fabriekstraat 1
 postcode: 7875AK Exloo
-email: gthexloo@hotmail.com
-phone: 
 website: 
-stageplek: false
-draft: true
+stageplek: 
+draft: false
 ---
 

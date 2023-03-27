@@ -5,10 +5,8 @@ logo: "images/leden/logo_het-gebint.jpg"
 icon: "images/leden/icon_het-gebint.jpg"
 address: Zuideinde 6
 postcode: 7875 CD Exloo
-email: info@hetgebint.eu
-phone: 
 website: 
-stageplek: false
-draft: true
+stageplek: 
+draft: false
 ---
 

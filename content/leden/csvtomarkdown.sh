@@ -1,11 +1,13 @@
 #!/bin/bash
 
-while IFS="," read -r title name adress postcode email website phone draft
+while IFS="," read -r title adress postcode website draft stage
 do
 	documentnaam=$(echo $title | tr ' ' '-')
 	documentnaam=${documentnaam//ś/s}
 	documentnaam=${documentnaam//./}
 	documentnaam=${documentnaam//é/e}
+	documentnaam=${documentnaam//de-/}
+	documentnaam=${documentnaam//De-/}
 
 	cat > "${documentnaam,,}.md" <<EOF
 ---
@@ -15,10 +17,8 @@ logo: "images/leden/logo_${documentnaam,,}.jpg"
 icon: "images/leden/icon_${documentnaam,,}.jpg"
 address: $adress
 postcode: $postcode
-email: $email
-phone: $phone
 website: $website
-stageplek: false
+stageplek: ${stage,,}
 draft: ${draft,,}
 ---
 

@@ -5,10 +5,8 @@ logo: "images/leden/logo_kabouterland.jpg"
 icon: "images/leden/icon_kabouterland.jpg"
 address: Zuiderhoofdstraat 11
 postcode: 7875BW Exloo
-email: 
-phone: 
 website: 
-stageplek: false
-draft: true
+stageplek: 
+draft: false
 ---
 

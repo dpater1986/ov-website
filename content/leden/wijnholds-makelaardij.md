@@ -5,10 +5,8 @@ logo: "images/leden/logo_wijnholds-makelaardij.jpg"
 icon: "images/leden/icon_wijnholds-makelaardij.jpg"
 address: Zuiderhoofdstraat 7
 postcode: 7875BW Exloo
-email: info@wijnholds-makelaardij.nl
-phone: 
-website: https://wijnholds-makelaardij.nl/
-stageplek: false
-draft: true
+website: 
+stageplek: 
+draft: false
 ---
 

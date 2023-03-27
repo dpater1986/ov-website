@@ -5,10 +5,8 @@ logo: "images/leden/logo_geerts-warenhuis.jpg"
 icon: "images/leden/icon_geerts-warenhuis.jpg"
 address: Zuiderhoofdstraat 9
 postcode: 7875 BW Exloo
-email: 
-phone: 
 website: 
-stageplek: false
-draft: true
+stageplek: 
+draft: false
 ---
 

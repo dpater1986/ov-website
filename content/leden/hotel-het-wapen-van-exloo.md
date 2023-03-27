@@ -5,10 +5,8 @@ logo: "images/leden/logo_hotel-het-wapen-van-exloo.jpg"
 icon: "images/leden/icon_hotel-het-wapen-van-exloo.jpg"
 address: Hoofdstraat 8
 postcode: 7875 AC Exloo
-email: info@wapenvanexloo.nl
-phone: 
-website: https://wapenvanexloo.nl/
-stageplek: false
-draft: true
+website: 
+stageplek: 
+draft: false
 ---
 

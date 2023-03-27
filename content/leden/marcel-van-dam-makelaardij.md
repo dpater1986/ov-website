@@ -5,10 +5,8 @@ logo: "images/leden/logo_marcel-van-dam-makelaardij.jpg"
 icon: "images/leden/icon_marcel-van-dam-makelaardij.jpg"
 address: Valtherweg 6
 postcode: 7875 TB Exloo
-email: info@marcelvandammakelaardij.nl
-phone: 
-website: https://www.marcelvandammakelaardij.nl/
-stageplek: false
-draft: true
+website: 
+stageplek: 
+draft: false
 ---
 

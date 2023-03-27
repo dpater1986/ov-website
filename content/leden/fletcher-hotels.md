@@ -5,10 +5,8 @@ logo: "images/leden/logo_fletcher-hotels.jpg"
 icon: "images/leden/icon_fletcher-hotels.jpg"
 address: Valtherweg 36
 postcode: 7875 TB Exloo
-email: 
-phone: 
 website: 
-stageplek: false
-draft: true
+stageplek: 
+draft: false
 ---
 

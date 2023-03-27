@@ -5,10 +5,8 @@ logo: "images/leden/logo_veldkamp-en-prins-notarissen.jpg"
 icon: "images/leden/icon_veldkamp-en-prins-notarissen.jpg"
 address: Bloemdijk 2 B
 postcode: 9531JL Borger
-email: info@vpnotarissen.nl
-phone: 
-website: https://vpnotarissen.nl/
-stageplek: false
-draft: true
+website: 
+stageplek: 
+draft: false
 ---
 
