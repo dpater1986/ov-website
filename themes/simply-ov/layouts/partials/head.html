@@ -2,9 +2,9 @@
     <meta name="author" content="{{if .Params.author }}{{ delimit . ", " }}{{ else }}Dennis Pater{{ end }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ with resources.Get "images/favicon.png" }}
-        <link rel="shortcut icon" href="{{ .RelPermalink }}" type="image/x-icon">
-    {{ end }}
+    //{{ with resources.Get "images/favicon.png" }}
+    //    <link rel="shortcut icon" href="{{ .RelPermalink }}" type="image/x-icon">
+    //{{ end }}
     {{ if .Site.IsServer }}
         {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
         <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
