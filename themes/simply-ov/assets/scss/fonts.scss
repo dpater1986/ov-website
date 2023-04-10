@@ -2,60 +2,60 @@
 // Fonts
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "/fonts/Brevia-BlackItalic.eot" }}{{ $font.RelPermalink }}');
+	src: url('/fonts/Brevia-BlackItalic.eot');
 	src: local('Brevia-Black Italic'), local('Brevia-BlackItalic'),
-	url('{{ $font := resources.Get "/fonts/Brevia-BlackItalic.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "/fonts/Brevia-BlackItalic.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "/fonts/Brevia-BlackItalic.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "/fonts/Brevia-BlackItalic.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('/fonts/Brevia-BlackItalic.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/Brevia-BlackItalic.woff2') format('woff2'),
+	url('/fonts/Brevia-BlackItalic.woff') format('woff'),
+	url('/fonts/Brevia-BlackItalic.ttf') format('truetype');
 	font-weight: 900;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-SemiboldItalic.eot');
+	src: url('fonts/Brevia-SemiboldItalic.eot');
 	src: local('Brevia-SemiboldItalic'),
-	url('{{ $font := resources.Get "fonts/Brevia-SemiboldItalic.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-SemiboldItalic.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-SemiboldItalic.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-SemiboldItalic.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-SemiboldItalic.woff2') format('woff2'),
+	url('fonts/Brevia-SemiboldItalic.woff') format('woff'),
+	url('fonts/Brevia-SemiboldItalic.ttf') format('truetype');
 	font-weight: 600;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-MediumItalic.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-MediumItalic.eot');
 	src: local('Brevia-MediumItalic'),
-	url('{{ $font := resources.Get "fonts/Brevia-MediumItalic.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-MediumItalic.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-MediumItalic.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-MediumItalic.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-MediumItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-MediumItalic.woff2') format('woff2'),
+	url('fonts/Brevia-MediumItalic.woff') format('woff'),
+	url('fonts/Brevia-MediumItalic.ttf') format('truetype');
 	font-weight: 500;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Brevia ExtraBlack';
-	src: url('{{ $font := resources.Get "fonts/Brevia-ExtraBlackItalic.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-ExtraBlackItalic.eot');
 	src: local('Brevia-ExtraBlackItalic'),
-	url('{{ $font := resources.Get "fonts/Brevia-ExtraBlackItalic.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-ExtraBlackItalic.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-ExtraBlackItalic.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-ExtraBlackItalic.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-ExtraBlackItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-ExtraBlackItalic.woff2') format('woff2'),
+	url('fonts/Brevia-ExtraBlackItalic.woff') format('woff'),
+	url('fonts/Brevia-ExtraBlackItalic.ttf') format('truetype');
 	font-weight: 900;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-Light.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-Light.eot');
 	src: local('Brevia-Light'),
-	url('{{ $font := resources.Get "fonts/Brevia-Light.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-Light.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-Light.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-Light.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-Light.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-Light.woff2') format('woff2'),
+	url('fonts/Brevia-Light.woff') format('woff'),
+	url('fonts/Brevia-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
@@ -64,118 +64,118 @@
 	font-family: 'Brevia';
 	src: url('/fonts/Brevia-Regular.eot');
 	src: local('Brevia-Regular'),
-	url('{{ $font := resources.Get "/fonts/Brevia-Regular.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "/fonts/Brevia-Regular.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "/fonts/Brevia-Regular.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "/fonts/Brevia-Regular.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('/fonts/Brevia-Regular.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/Brevia-Regular.woff2') format('woff2'),
+	url('/fonts/Brevia-Regular.woff') format('woff'),
+	url('/fonts/Brevia-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-Black.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-Black.eot');
 	src: local('Brevia-Black'),
-	url('{{ $font := resources.Get "fonts/Brevia-Black.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-Black.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-Black.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-Black.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-Black.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-Black.woff2') format('woff2'),
+	url('fonts/Brevia-Black.woff') format('woff'),
+	url('fonts/Brevia-Black.ttf') format('truetype');
 	font-weight: 900;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-LightItalic.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-LightItalic.eot');
 	src: local('Brevia-LightItalic'),
-	url('{{ $font := resources.Get "fonts/Brevia-LightItalic.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-LightItalic.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-LightItalic.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-LightItalic.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-LightItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-LightItalic.woff2') format('woff2'),
+	url('fonts/Brevia-LightItalic.woff') format('woff'),
+	url('fonts/Brevia-LightItalic.ttf') format('truetype');
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Brevia ExtraBlack';
-	src: url('{{ $font := resources.Get "fonts/Brevia-ExtraBlack.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-ExtraBlack.eot');
 	src: local('Brevia-ExtraBlack'),
-	url('{{ $font := resources.Get "fonts/Brevia-ExtraBlack.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-ExtraBlack.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-ExtraBlack.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-ExtraBlack.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-ExtraBlack.woff2') format('woff2'),
+	url('fonts/Brevia-ExtraBlack.woff') format('woff'),
+	url('fonts/Brevia-ExtraBlack.ttf') format('truetype');
 	font-weight: 900;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-Semibold.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-Semibold.eot');
 	src: local('Brevia-Semibold'),
-	url('{{ $font := resources.Get "fonts/Brevia-Semibold.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-Semibold.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-Semibold.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-Semibold.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-Semibold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-Semibold.woff2') format('woff2'),
+	url('fonts/Brevia-Semibold.woff') format('woff'),
+	url('fonts/Brevia-Semibold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Brevia Regular';
-	src: url('{{ $font := resources.Get "fonts/Brevia-RegularItalic.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-RegularItalic.eot');
 	src: local('Brevia-RegularItalic'),
-	url('{{ $font := resources.Get "fonts/Brevia-RegularItalic.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-RegularItalic.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-RegularItalic.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-RegularItalic.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-RegularItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-RegularItalic.woff2') format('woff2'),
+	url('fonts/Brevia-RegularItalic.woff') format('woff'),
+	url('fonts/Brevia-RegularItalic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-Bold.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-Bold.eot');
 	src: local('Brevia-Bold'),
-	url('{{ $font := resources.Get "fonts/Brevia-Bold.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-Bold.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-Bold.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-Bold.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-Bold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-Bold.woff2') format('woff2'),
+	url('fonts/Brevia-Bold.woff') format('woff'),
+	url('fonts/Brevia-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-Medium.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-Medium.eot');
 	src: local('Brevia-Medium'),
-	url('{{ $font := resources.Get "fonts/Brevia-Medium.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-Medium.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-Medium.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-Medium.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-Medium.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-Medium.woff2') format('woff2'),
+	url('fonts/Brevia-Medium.woff') format('woff'),
+	url('fonts/Brevia-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Brevia';
-	src: url('{{ $font := resources.Get "fonts/Brevia-BoldItalic.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/Brevia-BoldItalic.eot');
 	src: local('Brevia-Bold Italic'), local('Brevia-BoldItalic'),
-	url('{{ $font := resources.Get "fonts/Brevia-BoldItalic.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/Brevia-BoldItalic.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/Brevia-BoldItalic.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/Brevia-BoldItalic.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/Brevia-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Brevia-BoldItalic.woff2') format('woff2'),
+	url('fonts/Brevia-BoldItalic.woff') format('woff'),
+	url('fonts/Brevia-BoldItalic.ttf') format('truetype');
 	font-weight: bold;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Brush Script';
-	src: url('{{ $font := resources.Get "fonts/BrushScriptStd.eot" }}{{ $font.RelPermalink }}');
+	src: url('fonts/BrushScriptStd.eot');
 	src: local('Brush Script Std Medium'), local('BrushScriptStd'),
-	url('{{ $font := resources.Get "fonts/BrushScriptStd.eot?#iefix" }}{{ $font.RelPermalink }}') format('embedded-opentype'),
-	url('{{ $font := resources.Get "fonts/BrushScriptStd.woff2" }}{{ $font.RelPermalink }}') format('woff2'),
-	url('{{ $font := resources.Get "fonts/BrushScriptStd.woff" }}{{ $font.RelPermalink }}') format('woff'),
-	url('{{ $font := resources.Get "fonts/BrushScriptStd.ttf" }}{{ $font.RelPermalink }}') format('truetype');
+	url('fonts/BrushScriptStd.eot?#iefix') format('embedded-opentype'),
+	url('fonts/BrushScriptStd.woff2') format('woff2'),
+	url('fonts/BrushScriptStd.woff') format('woff'),
+	url('fonts/BrushScriptStd.ttf') format('truetype');
 	font-weight: 500;
 	font-style: italic;
 	font-display: swap;
