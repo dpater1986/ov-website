@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-BlackItalic.eot');
+    src: local('Brevia-Black Italic'), local('Brevia-BlackItalic'),
+        url('Brevia-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-BlackItalic.woff2') format('woff2'),
+        url('Brevia-BlackItalic.woff') format('woff'),
+        url('Brevia-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-SemiboldItalic.eot');
+    src: local('Brevia-SemiboldItalic'),
+        url('Brevia-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-SemiboldItalic.woff2') format('woff2'),
+        url('Brevia-SemiboldItalic.woff') format('woff'),
+        url('Brevia-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-MediumItalic.eot');
+    src: local('Brevia-MediumItalic'),
+        url('Brevia-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-MediumItalic.woff2') format('woff2'),
+        url('Brevia-MediumItalic.woff') format('woff'),
+        url('Brevia-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brevia ExtraBlack';
+    src: url('Brevia-ExtraBlackItalic.eot');
+    src: local('Brevia-ExtraBlackItalic'),
+        url('Brevia-ExtraBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-ExtraBlackItalic.woff2') format('woff2'),
+        url('Brevia-ExtraBlackItalic.woff') format('woff'),
+        url('Brevia-ExtraBlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-Light.eot');
+    src: local('Brevia-Light'),
+        url('Brevia-Light.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-Light.woff2') format('woff2'),
+        url('Brevia-Light.woff') format('woff'),
+        url('Brevia-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-Regular.eot');
+    src: local('Brevia-Regular'),
+        url('Brevia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-Regular.woff2') format('woff2'),
+        url('Brevia-Regular.woff') format('woff'),
+        url('Brevia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-Black.eot');
+    src: local('Brevia-Black'),
+        url('Brevia-Black.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-Black.woff2') format('woff2'),
+        url('Brevia-Black.woff') format('woff'),
+        url('Brevia-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-LightItalic.eot');
+    src: local('Brevia-LightItalic'),
+        url('Brevia-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-LightItalic.woff2') format('woff2'),
+        url('Brevia-LightItalic.woff') format('woff'),
+        url('Brevia-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brevia ExtraBlack';
+    src: url('Brevia-ExtraBlack.eot');
+    src: local('Brevia-ExtraBlack'),
+        url('Brevia-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-ExtraBlack.woff2') format('woff2'),
+        url('Brevia-ExtraBlack.woff') format('woff'),
+        url('Brevia-ExtraBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-Semibold.eot');
+    src: local('Brevia-Semibold'),
+        url('Brevia-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-Semibold.woff2') format('woff2'),
+        url('Brevia-Semibold.woff') format('woff'),
+        url('Brevia-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brevia Regular';
+    src: url('Brevia-RegularItalic.eot');
+    src: local('Brevia-RegularItalic'),
+        url('Brevia-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-RegularItalic.woff2') format('woff2'),
+        url('Brevia-RegularItalic.woff') format('woff'),
+        url('Brevia-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-Bold.eot');
+    src: local('Brevia-Bold'),
+        url('Brevia-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-Bold.woff2') format('woff2'),
+        url('Brevia-Bold.woff') format('woff'),
+        url('Brevia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-Medium.eot');
+    src: local('Brevia-Medium'),
+        url('Brevia-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-Medium.woff2') format('woff2'),
+        url('Brevia-Medium.woff') format('woff'),
+        url('Brevia-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brevia';
+    src: url('Brevia-BoldItalic.eot');
+    src: local('Brevia-Bold Italic'), local('Brevia-BoldItalic'),
+        url('Brevia-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Brevia-BoldItalic.woff2') format('woff2'),
+        url('Brevia-BoldItalic.woff') format('woff'),
+        url('Brevia-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
