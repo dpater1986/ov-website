@@ -16,7 +16,7 @@
 			<h3>{{ .Name }}</h3>
 			<ul class="files">
 				{{- range $files }}
-					{{ if (and (ne (substr .Name 0 1) "_") (not .IsDir)) }}{{ $f := printf "%s/%s/%s" $path .subname .Name }}
+					{{ if (and (ne (substr .Name 0 1) "_") (not .IsDir)) }}{{ $f := printf "%s/%s/%s" $path $subname .Name }}
 						{{ $e := findRE "\\w+$" .Name }}
 						{{ if (or ( eq $ext "-") (in $e $ext) )}}
 							{{ $titlename := replace .Name "-" " " }}
