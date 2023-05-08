@@ -5,8 +5,9 @@ menu:
       weight: 10
 layout: 'simple'
 ---
-Met enige regelmaat wordt er door Jofry maandelijks een mail verstuurd met daarin een nieuwsbrief.
-Deze nieuwsbrief is hieronder te downloaden.
+Hieronder vind je de nieuwsbrieven die zijn geschreven door Jofry.
+
+Wilt u de nieuwsbrieven ook ontvangen in uw inbox. Mail ons even op [bestuur@ondernemers-exloo.nl](mailto://bestuur@ondernemers-exloo.nl) en we voegen u toe.
 
 ## Nieuwsbrieven
 
